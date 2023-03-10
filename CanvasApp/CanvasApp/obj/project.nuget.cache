@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BB4v33PHFwW6+TAHKWn1uGYgHsUHWaEbyXHefln/4b4ZG2jAUKK3qqJmEF/7xOyv/vdRSYTtfBEiFXPjULTY0g==",
+  "success": true,
+  "projectFilePath": "C:\\ALICJA\\studia\\Przetw obr i grafika komp\\Projekcik z labek\\CanvasApp\\CanvasApp\\CanvasApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3842\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
