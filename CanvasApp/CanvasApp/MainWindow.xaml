@@ -18,20 +18,29 @@
 
     <StackPanel Orientation="Vertical"
                 Margin="0, 5, 0 0">
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal"
+                    Name="SettingsPanel"
+                    Height="25">
             <Button Click="CleanCanvas" Width="50">Clean</Button>
-            <Button Click="SetDrawingLine" Width="50">Line</Button>
-            <ComboBox Name="StrokeThicknesessComboBox">
+            <ToggleButton Width="50"
+                          Checked="SetDrawingLine"
+                          Unchecked="SetDrawingLine"
+                          Margin="5 0 5 0">Line</ToggleButton>
+            <ComboBox Name="StrokeThicknesessComboBox"
+                      Width="50"
+                      Margin="5 0 5 0">
             </ComboBox>
             <xctk:ColorPicker x:Name="_colorPicker"
                               Width="150"
+                              Height="25"
                               VerticalAlignment="Top"
+                              Margin="5 0 5 0"
                               SelectedColorChanged="ColorPicker_SelectedColorChanged"
                               DisplayColorAndName="True" />
         </StackPanel>
         <Canvas Name="paintSurface"
-            MouseDown="Canvas_MouseDown_1"
-            MouseMove="Canvas_MouseMove_1"
+                MouseDown="Canvas_MouseDown_1"
+                MouseMove="Canvas_MouseMove_1"
                 Height="360">
 
             <Canvas.Background>
